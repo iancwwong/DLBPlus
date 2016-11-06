@@ -1,0 +1,46 @@
+/*!
+ * Main CSS for DLBPlus
+ */
+
+/* Search */
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #aaa;
+  margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+
+input.currency:before {
+  content: attr(data-symbol);
+  float: left;
+  color: #aaa;
+}
+
+/* Results */
+.centered th {
+  text-align: center;
+}
+
+/* Listing Details */
+.listingImage {
+  max-height: 256px;
+  max-width: 256px;
+  width: auto;
+  height: auto;
+}
+
+.listingImageThumbnail {
+  max-height: 96px;
+  max-width: 96px;
+  width: auto;
+  height: auto;
+}
+
+.userNameListing {
+  margin-left: 30px;
+  margin-right: 10px;
+}
